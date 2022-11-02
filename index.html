@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>ReadText.io</title>
 </head>
-<body>
-    <div class="container">
-        <h1>ReadText</h1>
-        <form action="">
-            <textarea name="input" id="input-text" cols="30" rows="10"></textarea>
-            <select name="voice" id="voice"></select>
-            <input type="button" id="input-btn" value="Read">
+<body class="font-sans bg-[#1da1f2] flex items-center justify-center h-screen">
+    <div class="bg-white h-full lg:h-fit w-full lg:w-fit flex flex-col px-3 lg:py-2 lg:pb-5 pt-8 pb-10 rounded">
+        <h1 class="text-[#1da1f2] text-xl lg:text-2xl mb-4">ReadText</h1>
+        <form action="" class="flex flex-col justify-between h-full">
+            <textarea name="input" id="input-text" cols="30" rows="10" class="resize-none text-[#555] outline-none px-4 py-3 border border-blue-200 hover:border-[#1da1f2] focus:border-[#1da1f2] rounded mb-10 lg:mb-4 h-full"></textarea>
+            <select name="voice" id="voice" class=" bg-[#1da1f2] text-white px-3 py-2 rounded-sm text-md mb-5 lg:mb-2 cursor-pointer"></select>
+            <input type="button" id="input-btn" value="Read" class=" bg-[#1da1f2] text-white px-3 py-2 rounded-sm text-md cursor-pointer">
         </form>
     </div>
     <script src="./script.js"></script>

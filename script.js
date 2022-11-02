@@ -3,6 +3,7 @@ const options = document.querySelector("#voice")
 let voices = speechSynthesis.getVoices();
 for (i = 0; i < voices.length; i++) {
     options.innerHTML += `<option value="${voices[i].name}">${voices[i].name}</option>`
+    // console.log(voices[i].name)
 }
 input_btn.addEventListener('click', () =>{
     const text = document.querySelector("#input-text").value;
